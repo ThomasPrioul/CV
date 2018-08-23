@@ -163,4 +163,82 @@ Style de musique : du blues au métal, des 60's à aujourd'hui</value>
   <data name="MusicActivityHeader" xml:space="preserve">
     <value>Musique</value>
   </data>
+  <data name="EducationHeader" xml:space="preserve">
+    <value>Formation</value>
+  </data>
+  <data name="PolytechEducationDescription" xml:space="preserve">
+    <value>En alternance à Polytech Tours
+Option véhicules autonomes
+Major de la section informatique industrielle</value>
+  </data>
+  <data name="PolytechEducationHeader" xml:space="preserve">
+    <value>Ingénieur informatique industrielle</value>
+  </data>
+  <data name="IUTEducationHeader" xml:space="preserve">
+    <value>DUT GEII</value>
+  </data>
+  <data name="IUTEducationDescription" xml:space="preserve">
+    <value>IUT GEII de Tours</value>
+  </data>
+  <data name="SkillsHeader" xml:space="preserve">
+    <value>Compétences</value>
+  </data>
+  <data name="ComputingSkillsDescription" xml:space="preserve">
+    <value>Programmation des microcontrôleurs, DSP, FPGA
+Réseaux informatiques, linux et informatique embarquée
+Applications pour PC et Linux embarqué
+Modélisation UML, gestion de sources (git)
+Support avec tickets, développement agile</value>
+  </data>
+  <data name="IndustrialComputingHeader" xml:space="preserve">
+    <value>Informatique industrielle</value>
+  </data>
+  <data name="ElectronicsHeader" xml:space="preserve">
+    <value>Électronique</value>
+  </data>
+  <data name="LanguageSkillsHeader" xml:space="preserve">
+    <value>Langues</value>
+  </data>
+  <data name="ElectronicsSkillsDescription" xml:space="preserve">
+    <value>Réalisation de schémas et routage de carte</value>
+  </data>
+  <data name="EnglishSkillLevel" xml:space="preserve">
+    <value>Anglais niveau C1/C2
+TOEIC : 990</value>
+  </data>
+  <data name="ExperienceHeader" xml:space="preserve">
+    <value>Expérience professionnelle</value>
+  </data>
+  <data name="ABCPortageJobTitle" xml:space="preserve">
+    <value>Chef de projet informatique</value>
+  </data>
+  <data name="ABCPortageJobDescription" xml:space="preserve">
+    <value>Logiciel 'valise' pour les trains NAT et Régio2N :
+ - Détections d'anomalies en temps réel, sur rame ou à distance
+ - Affichage graphique avec dessins et couleurs
+ - Simplifie la localisation des pannes pour les dépanneurs en dépôt
+ - Assiste le pôle d'appui conduite (Gare du Nord)
+
+Banc de test réseaux pour le train Régio2N :
+ - Basé sur le banc NAT développé précédemment
+ - Simulation de 3x plus de réseaux et équipements
+ - Logiciel service web multiplateforme (Linux)
+
+Simulateur de mission pour le train NAT (Île de France Mobilités) :
+ - Simule le déplacement du train par émission de messages réseaux
+ - Suivi du train sur une carte, ainsi qu'un plan de ligne
+ - Validation des bases de données sans mobiliser de train</value>
+  </data>
+  <data name="SNCFJobTitle" xml:space="preserve">
+    <value>Apprenti informatique industrielle</value>
+  </data>
+  <data name="SNCFJobDescription" xml:space="preserve">
+    <value>Banc de test réseaux pour le train NAT :
+ - Développement d'architecture logicielle complexe
+ - Modification code source FPGA en C (processeur NIOS)
+ - Simulation en temps réel d'équipements via un PC
+ - Test des équipements dans leur environnement nominal
+ - Réalisation de séquences (mise en service, arrêt d'urgence...)
+ - Test des pièces en réparation</value>
+  </data>
 </root>
