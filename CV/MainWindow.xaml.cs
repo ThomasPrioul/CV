@@ -1,5 +1,6 @@
 ﻿namespace CV
 {
+    using System;
     using System.Diagnostics;
     using System.Windows;
     using System.Windows.Controls;
@@ -11,6 +12,8 @@
         {
             InitializeComponent();
         }
+
+        public Uri EmailAddressUri => new Uri(Properties.Resources.MailToEmailAddress);
 
         void PrintCommandBinding_CanExecute(object sender, System.Windows.Input.CanExecuteRoutedEventArgs e)
         {

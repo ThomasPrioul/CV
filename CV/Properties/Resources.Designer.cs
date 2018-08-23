@@ -22,7 +22,7 @@ namespace CV.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace CV.Properties {
         ///   Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CV.Properties.Resources", typeof(Resources).Assembly);
@@ -51,12 +51,145 @@ namespace CV.Properties {
         ///   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Centres d&apos;intérêt.
+        /// </summary>
+        public static string ActivitiesHeader {
+            get {
+                return ResourceManager.GetString("ActivitiesHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Infographisme 3D
+        ///Jeux vidéos et projets communautaires, compétitions.
+        /// </summary>
+        public static string ComputingActivityDescription {
+            get {
+                return ResourceManager.GetString("ComputingActivityDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Informatique.
+        /// </summary>
+        public static string ComputingActivityHeader {
+            get {
+                return ResourceManager.GetString("ComputingActivityHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Contact.
+        /// </summary>
+        public static string ContactHeader {
+            get {
+                return ResourceManager.GetString("ContactHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à thomas.prioul@outlook.com.
+        /// </summary>
+        public static string EmailAddress {
+            get {
+                return ResourceManager.GetString("EmailAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Thomas Prioul.
+        /// </summary>
+        public static string FullName {
+            get {
+                return ResourceManager.GetString("FullName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 23 ans
+        ///Français
+        ///Permis B.
+        /// </summary>
+        public static string Info {
+            get {
+                return ResourceManager.GetString("Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Ingénieur informatique industrielle.
+        /// </summary>
+        public static string JobTitle {
+            get {
+                return ResourceManager.GetString("JobTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à mailto:thomas.prioul@outlook.com.
+        /// </summary>
+        public static string MailToEmailAddress {
+            get {
+                return ResourceManager.GetString("MailToEmailAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Guitariste (8 ans)
+        ///Batteur (débutant)
+        ///Style de musique : du blues au métal, des 60&apos;s à aujourd&apos;hui.
+        /// </summary>
+        public static string MusicActivityDescription {
+            get {
+                return ResourceManager.GetString("MusicActivityDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Musique.
+        /// </summary>
+        public static string MusicActivityHeader {
+            get {
+                return ResourceManager.GetString("MusicActivityHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à 06 35 91 42 86.
+        /// </summary>
+        public static string PhoneNumber {
+            get {
+                return ResourceManager.GetString("PhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Actuellement en poste en freelance pour la SNCF, je réalise des applications pour PC à destination de bancs de test ainsi qu&apos;à de l&apos;assistance au dépannage.
+        ///
+        ///Pour 2019 je cherche un poste plus tourné vers l&apos;électronique et le développement de produits à base de microcontrôleurs et/ou de cartes linux embarquées..
+        /// </summary>
+        public static string ProfileDescription {
+            get {
+                return ResourceManager.GetString("ProfileDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une chaîne localisée semblable à Profil.
+        /// </summary>
+        public static string ProfileHeader {
+            get {
+                return ResourceManager.GetString("ProfileHeader", resourceCulture);
             }
         }
     }

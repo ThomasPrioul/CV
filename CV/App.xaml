@@ -363,6 +363,23 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
+
+            <Style x:Key="CategoryTitleSeparator" TargetType="Separator">
+                <Setter Property="Margin" Value="0 2 0 6" />
+            </Style>
+
+            <Style x:Key="CategoryTitle" TargetType="TextBlock" />
+            <Style x:Key="CategorySubHeader" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="Margin" Value="0 4" />
+            </Style>
+            <Style x:Key="CategoryDescriptionText" TargetType="TextBlock">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="Foreground" Value="{x:Static local:Brushes.CoolGray5}" />
+                <Setter Property="Margin" Value="0 0 0 4" />
+                <Setter Property="TextWrapping" Value="Wrap" />
+                <Setter Property="LineHeight" Value="18" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

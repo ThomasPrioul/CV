@@ -114,4 +114,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ProfileDescription" xml:space="preserve">
+    <value>Actuellement en poste en freelance pour la SNCF, je réalise des applications pour PC à destination de bancs de test ainsi qu'à de l'assistance au dépannage.
+
+Pour 2019 je cherche un poste plus tourné vers l'électronique et le développement de produits à base de microcontrôleurs et/ou de cartes linux embarquées.</value>
+  </data>
+  <data name="ProfileHeader" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="ContactHeader" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="EmailAddress" xml:space="preserve">
+    <value>thomas.prioul@outlook.com</value>
+  </data>
+  <data name="MailToEmailAddress" xml:space="preserve">
+    <value>mailto:thomas.prioul@outlook.com</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>06 35 91 42 86</value>
+  </data>
+  <data name="JobTitle" xml:space="preserve">
+    <value>Ingénieur informatique industrielle</value>
+  </data>
+  <data name="FullName" xml:space="preserve">
+    <value>Thomas Prioul</value>
+  </data>
+  <data name="ActivitiesHeader" xml:space="preserve">
+    <value>Centres d'intérêt</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>23 ans
+Français
+Permis B</value>
+  </data>
+  <data name="ComputingActivityDescription" xml:space="preserve">
+    <value>Infographisme 3D
+Jeux vidéos et projets communautaires, compétitions</value>
+  </data>
+  <data name="MusicActivityDescription" xml:space="preserve">
+    <value>Guitariste (8 ans)
+Batteur (débutant)
+Style de musique : du blues au métal, des 60's à aujourd'hui</value>
+  </data>
+  <data name="ComputingActivityHeader" xml:space="preserve">
+    <value>Informatique</value>
+  </data>
+  <data name="MusicActivityHeader" xml:space="preserve">
+    <value>Musique</value>
+  </data>
 </root>
