@@ -1,7 +1,7 @@
 ﻿<Application x:Class="CV.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:fa="clr-namespace:FontAwesome5;assembly=FontAwesome5"
+             xmlns:fa="http://schemas.fontawesome.com/icons/"
              xmlns:local="clr-namespace:CV"
              xmlns:shell="http://schemas.microsoft.com/winfx/2006/xaml/presentation/shell"
              StartupUri="MainWindow.xaml">
@@ -301,6 +301,11 @@
                                                     shell:WindowChrome.IsHitTestVisibleInChrome="True"
                                                     DockPanel.Dock="Right"
                                                     Orientation="Horizontal">
+                                            <Button x:Name="PrintButton"
+                                                    Command="ApplicationCommands.Print"
+                                                    Style="{StaticResource SystemButtonStyle}">
+                                                <fa:FontAwesome Icon="Solid_Print" />
+                                            </Button>
                                             <Button x:Name="MinimizeButton" Style="{StaticResource MinimizeSystemButtonStyle}" />
                                             <Button x:Name="MaximizeButton" Style="{StaticResource MaximizeRestoreSystemButtonStyle}" />
                                             <Button x:Name="CloseButton" Style="{StaticResource CloseSystemButtonStyle}" />
