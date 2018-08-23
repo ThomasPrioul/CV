@@ -120,10 +120,10 @@
 Pour 2019 je cherche un poste plus tourné vers l'électronique et le développement de produits à base de microcontrôleurs et/ou de cartes linux embarquées.</value>
   </data>
   <data name="ProfileHeader" xml:space="preserve">
-    <value>Profil</value>
+    <value>PROFIL</value>
   </data>
   <data name="ContactHeader" xml:space="preserve">
-    <value>Contact</value>
+    <value>CONTACT</value>
   </data>
   <data name="EmailAddress" xml:space="preserve">
     <value>thomas.prioul@outlook.com</value>
@@ -138,10 +138,10 @@ Pour 2019 je cherche un poste plus tourné vers l'électronique et le développe
     <value>Ingénieur informatique industrielle</value>
   </data>
   <data name="FullName" xml:space="preserve">
-    <value>Thomas Prioul</value>
+    <value>THOMAS PRIOUL</value>
   </data>
   <data name="ActivitiesHeader" xml:space="preserve">
-    <value>Centres d'intérêt</value>
+    <value>CENTRES D'INTÉRÊT</value>
   </data>
   <data name="Info" xml:space="preserve">
     <value>23 ans
@@ -164,7 +164,7 @@ Style de musique : du blues au métal, des 60's à aujourd'hui</value>
     <value>Musique</value>
   </data>
   <data name="EducationHeader" xml:space="preserve">
-    <value>Formation</value>
+    <value>FORMATION</value>
   </data>
   <data name="PolytechEducationDescription" xml:space="preserve">
     <value>En alternance à Polytech Tours
@@ -181,7 +181,7 @@ Major de la section informatique industrielle</value>
     <value>IUT GEII de Tours</value>
   </data>
   <data name="SkillsHeader" xml:space="preserve">
-    <value>Compétences</value>
+    <value>COMPÉTENCES</value>
   </data>
   <data name="ComputingSkillsDescription" xml:space="preserve">
     <value>Programmation des microcontrôleurs, DSP, FPGA
@@ -207,7 +207,7 @@ Support avec tickets, développement agile</value>
 TOEIC : 990</value>
   </data>
   <data name="ExperienceHeader" xml:space="preserve">
-    <value>Expérience professionnelle</value>
+    <value>EXPÉRIENCE PROFESSIONNELLE</value>
   </data>
   <data name="ABCPortageJobTitle" xml:space="preserve">
     <value>Chef de projet informatique</value>
@@ -218,6 +218,7 @@ TOEIC : 990</value>
  - Affichage graphique avec dessins et couleurs
  - Simplifie la localisation des pannes pour les dépanneurs en dépôt
  - Assiste le pôle d'appui conduite (Gare du Nord)
+ - Chef de projet : gestion des stagiaires, gestion des tickets
 
 Banc de test réseaux pour le train Régio2N :
  - Basé sur le banc NAT développé précédemment
@@ -238,7 +239,6 @@ Simulateur de mission pour le train NAT (Île de France Mobilités) :
  - Modification code source FPGA en C (processeur NIOS)
  - Simulation en temps réel d'équipements via un PC
  - Test des équipements dans leur environnement nominal
- - Réalisation de séquences (mise en service, arrêt d'urgence...)
- - Test des pièces en réparation</value>
+ - Réalisation de séquences (mise en service, arrêt d'urgence...)</value>
   </data>
 </root>

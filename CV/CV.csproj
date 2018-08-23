@@ -154,8 +154,5 @@
     <Resource Include="Fonts\Raleway\OFL.txt" />
     <Resource Include="Fonts\Roboto\LICENSE.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="profile.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

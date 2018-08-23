@@ -66,13 +66,12 @@ namespace CV.Properties {
         /// - Affichage graphique avec dessins et couleurs
         /// - Simplifie la localisation des pannes pour les dépanneurs en dépôt
         /// - Assiste le pôle d&apos;appui conduite (Gare du Nord)
+        /// - Chef de projet : gestion des stagiaires, gestion des tickets
         ///
         ///Banc de test réseaux pour le train Régio2N :
         /// - Basé sur le banc NAT développé précédemment
         /// - Simulation de 3x plus de réseaux et équipements
-        /// - Logiciel service web multiplateforme (Linux)
-        ///
-        ///Simulateur de mission pou [le reste de la chaîne a été tronqué]&quot;;.
+        /// - Logiciel [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         public static string ABCPortageJobDescription {
             get {
@@ -90,7 +89,7 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Centres d&apos;intérêt.
+        ///   Recherche une chaîne localisée semblable à CENTRES D&apos;INTÉRÊT.
         /// </summary>
         public static string ActivitiesHeader {
             get {
@@ -131,7 +130,7 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Contact.
+        ///   Recherche une chaîne localisée semblable à CONTACT.
         /// </summary>
         public static string ContactHeader {
             get {
@@ -140,7 +139,7 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Formation.
+        ///   Recherche une chaîne localisée semblable à FORMATION.
         /// </summary>
         public static string EducationHeader {
             get {
@@ -186,7 +185,7 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Expérience professionnelle.
+        ///   Recherche une chaîne localisée semblable à EXPÉRIENCE PROFESSIONNELLE.
         /// </summary>
         public static string ExperienceHeader {
             get {
@@ -195,7 +194,7 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Thomas Prioul.
+        ///   Recherche une chaîne localisée semblable à THOMAS PRIOUL.
         /// </summary>
         public static string FullName {
             get {
@@ -329,7 +328,7 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Profil.
+        ///   Recherche une chaîne localisée semblable à PROFIL.
         /// </summary>
         public static string ProfileHeader {
             get {
@@ -338,7 +337,7 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Compétences.
+        ///   Recherche une chaîne localisée semblable à COMPÉTENCES.
         /// </summary>
         public static string SkillsHeader {
             get {
@@ -352,8 +351,7 @@ namespace CV.Properties {
         /// - Modification code source FPGA en C (processeur NIOS)
         /// - Simulation en temps réel d&apos;équipements via un PC
         /// - Test des équipements dans leur environnement nominal
-        /// - Réalisation de séquences (mise en service, arrêt d&apos;urgence...)
-        /// - Test des pièces en réparation.
+        /// - Réalisation de séquences (mise en service, arrêt d&apos;urgence...).
         /// </summary>
         public static string SNCFJobDescription {
             get {
