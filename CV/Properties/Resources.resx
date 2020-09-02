@@ -115,9 +115,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ProfileDescription" xml:space="preserve">
-    <value>Actuellement en poste en freelance pour la SNCF, je réalise des applications pour PC à destination de bancs de test ainsi qu'à de l'assistance au dépannage.
-
-Pour 2019 je cherche un poste plus tourné vers l'électronique et le développement de produits à base de microcontrôleurs et/ou de cartes linux embarquées.</value>
+    <value>J'ai réalisé des applications pour PC à destination de bancs de test ainsi que des sites web et applications pour de l'assistance au dépannage des trains.
+Ma compétence principale est le développement "full stack" applicatif en C#, que je pratique quotidiennement depuis 6 ans.
+Ayant fait un parcours en informatique industrielle, les problèmes bas niveau et l'électronique m'intéressent également beaucoup.</value>
   </data>
   <data name="ProfileHeader" xml:space="preserve">
     <value>PROFIL</value>
@@ -144,7 +144,7 @@ Pour 2019 je cherche un poste plus tourné vers l'électronique et le développe
     <value>CENTRES D'INTÉRÊT</value>
   </data>
   <data name="Info" xml:space="preserve">
-    <value>23 ans
+    <value>25 ans
 Français
 Permis B</value>
   </data>
@@ -153,9 +153,8 @@ Permis B</value>
 Jeux vidéos et projets communautaires, compétitions</value>
   </data>
   <data name="MusicActivityDescription" xml:space="preserve">
-    <value>Guitariste (8 ans)
-Batteur (débutant)
-Style de musique : du blues au métal, des 60's à aujourd'hui</value>
+    <value>Guitariste (10 ans)
+Batteur (débutant)</value>
   </data>
   <data name="ComputingActivityHeader" xml:space="preserve">
     <value>Informatique</value>
@@ -216,14 +215,15 @@ TOEIC : 990</value>
     <value>Logiciel 'valise' pour les trains NAT et Régio2N :
  - Détections d'anomalies en temps réel, sur rame ou à distance
  - Affichage graphique avec dessins et couleurs
- - Simplifie la localisation des pannes pour les dépanneurs en dépôt
- - Assiste le pôle d'appui conduite (Gare du Nord)
- - Chef de projet : gestion des stagiaires, gestion des tickets
+ - Retro-engineering de protocoles réseaux
+ - Simplifie la localisation des pannes, système de navigation
+ - Développeur principal : gestion de stagiaires, gestion des tickets et demandes client
+ - Réalisé en C#/WPF et en C#/Blazor
 
 Banc de test réseaux pour le train Régio2N :
  - Basé sur le banc NAT développé précédemment
- - Simulation de 3x plus de réseaux et équipements
- - Logiciel service web multiplateforme (Linux)
+ - Simulation de 3x plus de réseaux et équipements que sur NAT
+ - Tests télédiagnostics, communication sol/bord
 
 Simulateur de mission pour le train NAT (Île de France Mobilités) :
  - Simule le déplacement du train par émission de messages réseaux

@@ -19,7 +19,7 @@ namespace CV.Properties {
     // à l'aide d'un outil, tel que ResGen ou Visual Studio.
     // Pour ajouter ou supprimer un membre, modifiez votre fichier .ResX, puis réexécutez ResGen
     // avec l'option /str ou régénérez votre projet VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     public class Resources {
@@ -64,14 +64,14 @@ namespace CV.Properties {
         ///   Recherche une chaîne localisée semblable à Logiciel &apos;valise&apos; pour les trains NAT et Régio2N :
         /// - Détections d&apos;anomalies en temps réel, sur rame ou à distance
         /// - Affichage graphique avec dessins et couleurs
-        /// - Simplifie la localisation des pannes pour les dépanneurs en dépôt
-        /// - Assiste le pôle d&apos;appui conduite (Gare du Nord)
-        /// - Chef de projet : gestion des stagiaires, gestion des tickets
+        /// - Retro-engineering de protocoles réseaux
+        /// - Simplifie la localisation des pannes, système de navigation
+        /// - Développeur principal : gestion de stagiaires, gestion des tickets et demandes client
+        /// - Réalisé en C#/WPF et en C#/Blazor
         ///
         ///Banc de test réseaux pour le train Régio2N :
         /// - Basé sur le banc NAT développé précédemment
-        /// - Simulation de 3x plus de réseaux et équipements
-        /// - Logiciel [le reste de la chaîne a été tronqué]&quot;;.
+        /// - Simulation  [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         public static string ABCPortageJobDescription {
             get {
@@ -212,7 +212,7 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à 23 ans
+        ///   Recherche une chaîne localisée semblable à 25 ans
         ///Français
         ///Permis B.
         /// </summary>
@@ -268,9 +268,8 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Guitariste (8 ans)
-        ///Batteur (débutant)
-        ///Style de musique : du blues au métal, des 60&apos;s à aujourd&apos;hui.
+        ///   Recherche une chaîne localisée semblable à Guitariste (10 ans)
+        ///Batteur (débutant).
         /// </summary>
         public static string MusicActivityDescription {
             get {
@@ -317,9 +316,9 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Actuellement en poste en freelance pour la SNCF, je réalise des applications pour PC à destination de bancs de test ainsi qu&apos;à de l&apos;assistance au dépannage.
-        ///
-        ///Pour 2019 je cherche un poste plus tourné vers l&apos;électronique et le développement de produits à base de microcontrôleurs et/ou de cartes linux embarquées..
+        ///   Recherche une chaîne localisée semblable à J&apos;ai réalisé des applications pour PC à destination de bancs de test ainsi que des sites web et applications pour de l&apos;assistance au dépannage des trains.
+        ///Ma compétence principale est le développement &quot;full stack&quot; applicatif en C#, que je pratique quotidiennement depuis 6 ans.
+        ///Ayant fait un parcours en informatique industrielle, les problèmes bas niveau et l&apos;électronique m&apos;intéressent également beaucoup..
         /// </summary>
         public static string ProfileDescription {
             get {

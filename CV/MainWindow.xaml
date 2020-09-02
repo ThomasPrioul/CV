@@ -121,6 +121,9 @@
                             <TextBlock Style="{StaticResource CategoryDescriptionText}" Text="{x:Static properties:Resources.ComputingActivityDescription}" />
                             <TextBlock Style="{StaticResource CategorySubHeader}" Text="{x:Static properties:Resources.MusicActivityHeader}" />
                             <TextBlock Style="{StaticResource CategoryDescriptionText}" Text="{x:Static properties:Resources.MusicActivityDescription}" />
+                            <TextBlock Style="{StaticResource CategorySubHeader}" Text="Sports" />
+                            <TextBlock Style="{StaticResource CategoryDescriptionText}" Text="Tennis" />
+                            <TextBlock Style="{StaticResource CategoryDescriptionText}" Text="Football" />
                         </StackPanel>
                     </ScrollViewer>
                 </StackPanel>
@@ -132,7 +135,7 @@
                       ResizeBehavior="CurrentAndNext" />
         <Grid x:Name="RightPane"
               Grid.Column="1"
-              Margin="20 40 20 30">
+              Margin="20 40 20 10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition />
@@ -153,7 +156,7 @@
                     <TextBlock x:Name="ABCPortageDates"
                                DockPanel.Dock="Right"
                                Style="{StaticResource CategorySubHeader}"
-                               Text="2017-2018" />
+                               Text="2017-2020" />
                     <StackPanel x:Name="ABCPortageTitle">
                         <TextBlock Style="{StaticResource CategorySubHeader}" Text="{x:Static properties:Resources.ABCPortageJobTitle}" />
                         <TextBlock Margin="0 -4 0 8"
