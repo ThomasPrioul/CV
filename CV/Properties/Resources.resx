@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,15 +112,17 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ProfileDescription" xml:space="preserve">
-    <value>J'ai réalisé des applications pour PC à destination de bancs de test ainsi que des sites web et applications pour de l'assistance au dépannage des trains.
-Ma compétence principale est le développement "full stack" applicatif en C#, que je pratique quotidiennement depuis 6 ans.
-Ayant fait un parcours en informatique industrielle, les problèmes bas niveau et l'électronique m'intéressent également beaucoup.</value>
+    <value>Ayant une expérience significative dans le milieu ferroviaire (réalisation de bancs de test, logiciels maintenance), ma compétence principale est le développement "full stack" en C# (7 ans quotidien).
+
+Je suis aussi à l'aise en C et C++ (Qt &amp; QML).
+
+Ayant un parcours académique en informatique industrielle, les problèmes d'informatique bas niveau et l'électronique m'intéressent également beaucoup.</value>
   </data>
   <data name="ProfileHeader" xml:space="preserve">
     <value>PROFIL</value>
@@ -144,17 +149,14 @@ Ayant fait un parcours en informatique industrielle, les problèmes bas niveau e
     <value>CENTRES D'INTÉRÊT</value>
   </data>
   <data name="Info" xml:space="preserve">
-    <value>25 ans
-Français
-Permis B</value>
+    <value>26 ans - Français - Permis B</value>
   </data>
   <data name="ComputingActivityDescription" xml:space="preserve">
     <value>Infographisme 3D
 Jeux vidéos et projets communautaires, compétitions</value>
   </data>
   <data name="MusicActivityDescription" xml:space="preserve">
-    <value>Guitariste (10 ans)
-Batteur (débutant)</value>
+    <value>Guitare - batterie</value>
   </data>
   <data name="ComputingActivityHeader" xml:space="preserve">
     <value>Informatique</value>
@@ -183,11 +185,11 @@ Major de la section informatique industrielle</value>
     <value>COMPÉTENCES</value>
   </data>
   <data name="ComputingSkillsDescription" xml:space="preserve">
-    <value>Programmation des microcontrôleurs, DSP, FPGA
-Réseaux informatiques, linux et informatique embarquée
-Applications pour PC et Linux embarqué
+    <value>Programmation de microcontrôleurs, DSP et FPGA
+Réseaux informatiques, administration système Linux, systèmes d'exploitation
+Applications pour PC et Linux embarqué (Qt, QML)
 Modélisation UML, gestion de sources (git)
-Support avec tickets, développement agile</value>
+Support avec tickets (Redmine), développement agile (Azure DevOps, Jenkins, Docker)</value>
   </data>
   <data name="IndustrialComputingHeader" xml:space="preserve">
     <value>Informatique industrielle</value>
@@ -199,7 +201,7 @@ Support avec tickets, développement agile</value>
     <value>Langues</value>
   </data>
   <data name="ElectronicsSkillsDescription" xml:space="preserve">
-    <value>Réalisation de schémas et routage de carte</value>
+    <value>Réalisation de prototypes, schémas et routage de carte</value>
   </data>
   <data name="EnglishSkillLevel" xml:space="preserve">
     <value>Anglais niveau C1/C2
@@ -209,36 +211,36 @@ TOEIC : 990</value>
     <value>EXPÉRIENCE PROFESSIONNELLE</value>
   </data>
   <data name="ABCPortageJobTitle" xml:space="preserve">
-    <value>Chef de projet informatique</value>
+    <value>Ingénieur informatique industrielle</value>
   </data>
   <data name="ABCPortageJobDescription" xml:space="preserve">
-    <value>Logiciel 'valise' pour les trains NAT et Régio2N :
- - Détections d'anomalies en temps réel, sur rame ou à distance
- - Affichage graphique avec dessins et couleurs
- - Retro-engineering de protocoles réseaux
- - Simplifie la localisation des pannes, système de navigation
- - Développeur principal : gestion de stagiaires, gestion des tickets et demandes client
- - Réalisé en C#/WPF et en C#/Blazor
+    <value>Support technique (C#, C++) sur projet de box CBM embarquée.
 
-Banc de test réseaux pour le train Régio2N :
- - Basé sur le banc NAT développé précédemment
- - Simulation de 3x plus de réseaux et équipements que sur NAT
- - Tests télédiagnostics, communication sol/bord
+Logiciel supervision pour les trains NAT, Régio2N et RERNG (C#) :
+ - Détections d'anomalies en temps réel, sur rame ou à distance
+ - Retro-engineering de protocoles réseaux
+ - Génération de rapports automatiques et retour d'expérience
+ - Développeur principal : gestion, présentations, formation, documentation
+
+Banc de test réseaux pour le train Régio2N (C#) :
+ - Simulation de plusieurs réseaux en temps réel, réseaux sécuritaires
+ - Simulation équipements SIL2 (FPGA, C)
+ - Tests télédiagnostics, communication sol/bord (C#)
 
 Simulateur de mission pour le train NAT (Île de France Mobilités) :
- - Simule le déplacement du train par émission de messages réseaux
- - Suivi du train sur une carte, ainsi qu'un plan de ligne
- - Validation des bases de données sans mobiliser de train</value>
+ - Simule le déplacement du train en temps réel
+ - Connectable au banc de test pour valider le matériel du système info voyageurs</value>
   </data>
   <data name="SNCFJobTitle" xml:space="preserve">
     <value>Apprenti informatique industrielle</value>
   </data>
   <data name="SNCFJobDescription" xml:space="preserve">
     <value>Banc de test réseaux pour le train NAT :
- - Développement d'architecture logicielle complexe
- - Modification code source FPGA en C (processeur NIOS)
- - Simulation en temps réel d'équipements via un PC
- - Test des équipements dans leur environnement nominal
- - Réalisation de séquences (mise en service, arrêt d'urgence...)</value>
+ - Simulation d'équipements sur bus MVB (FPGA, NIOS II, C)
+ - Simulation en temps réel d'équipements IP via un PC (C#)
+ - Scripts de simulation (retranscription d'un fonctionnel câblé électrique)</value>
+  </data>
+  <data name="LinkedIn" xml:space="preserve">
+    <value>https://www.linkedin.com/in/thomas-prioul/</value>
   </data>
 </root>

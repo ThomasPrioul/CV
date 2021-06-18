@@ -61,17 +61,17 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Logiciel &apos;valise&apos; pour les trains NAT et Régio2N :
-        /// - Détections d&apos;anomalies en temps réel, sur rame ou à distance
-        /// - Affichage graphique avec dessins et couleurs
-        /// - Retro-engineering de protocoles réseaux
-        /// - Simplifie la localisation des pannes, système de navigation
-        /// - Développeur principal : gestion de stagiaires, gestion des tickets et demandes client
-        /// - Réalisé en C#/WPF et en C#/Blazor
+        ///   Recherche une chaîne localisée semblable à Support technique (C#, C++) sur projet de box CBM embarquée.
         ///
-        ///Banc de test réseaux pour le train Régio2N :
-        /// - Basé sur le banc NAT développé précédemment
-        /// - Simulation  [le reste de la chaîne a été tronqué]&quot;;.
+        ///Logiciel supervision pour les trains NAT, Régio2N et RERNG (C#) :
+        /// - Détections d&apos;anomalies en temps réel, sur rame ou à distance
+        /// - Retro-engineering de protocoles réseaux
+        /// - Génération de rapports automatiques et retour d&apos;expérience
+        /// - Développeur principal : gestion, présentations, formation, documentation
+        ///
+        ///Banc de test réseaux pour le train Régio2N (C#) :
+        /// - Simulation de plusieurs réseaux en temps réel, réseaux sécuritaires
+        /// - Simu [le reste de la chaîne a été tronqué]&quot;;.
         /// </summary>
         public static string ABCPortageJobDescription {
             get {
@@ -80,7 +80,7 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Chef de projet informatique.
+        ///   Recherche une chaîne localisée semblable à Ingénieur informatique industrielle.
         /// </summary>
         public static string ABCPortageJobTitle {
             get {
@@ -117,11 +117,11 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Programmation des microcontrôleurs, DSP, FPGA
-        ///Réseaux informatiques, linux et informatique embarquée
-        ///Applications pour PC et Linux embarqué
+        ///   Recherche une chaîne localisée semblable à Programmation de microcontrôleurs, DSP et FPGA
+        ///Réseaux informatiques, administration système Linux, systèmes d&apos;exploitation
+        ///Applications pour PC et Linux embarqué (Qt, QML)
         ///Modélisation UML, gestion de sources (git)
-        ///Support avec tickets, développement agile.
+        ///Support avec tickets (Redmine), développement agile (Azure DevOps, Jenkins, Docker).
         /// </summary>
         public static string ComputingSkillsDescription {
             get {
@@ -157,7 +157,7 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Réalisation de schémas et routage de carte.
+        ///   Recherche une chaîne localisée semblable à Réalisation de prototypes, schémas et routage de carte.
         /// </summary>
         public static string ElectronicsSkillsDescription {
             get {
@@ -212,9 +212,7 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à 25 ans
-        ///Français
-        ///Permis B.
+        ///   Recherche une chaîne localisée semblable à 26 ans - Français - Permis B.
         /// </summary>
         public static string Info {
             get {
@@ -259,6 +257,15 @@ namespace CV.Properties {
         }
         
         /// <summary>
+        ///   Recherche une chaîne localisée semblable à https://www.linkedin.com/in/thomas-prioul/.
+        /// </summary>
+        public static string LinkedIn {
+            get {
+                return ResourceManager.GetString("LinkedIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une chaîne localisée semblable à mailto:thomas.prioul@outlook.com.
         /// </summary>
         public static string MailToEmailAddress {
@@ -268,8 +275,7 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à Guitariste (10 ans)
-        ///Batteur (débutant).
+        ///   Recherche une chaîne localisée semblable à Guitare - batterie.
         /// </summary>
         public static string MusicActivityDescription {
             get {
@@ -316,9 +322,11 @@ namespace CV.Properties {
         }
         
         /// <summary>
-        ///   Recherche une chaîne localisée semblable à J&apos;ai réalisé des applications pour PC à destination de bancs de test ainsi que des sites web et applications pour de l&apos;assistance au dépannage des trains.
-        ///Ma compétence principale est le développement &quot;full stack&quot; applicatif en C#, que je pratique quotidiennement depuis 6 ans.
-        ///Ayant fait un parcours en informatique industrielle, les problèmes bas niveau et l&apos;électronique m&apos;intéressent également beaucoup..
+        ///   Recherche une chaîne localisée semblable à Ayant une expérience significative dans le milieu ferroviaire (réalisation de bancs de test, logiciels maintenance), ma compétence principale est le développement &quot;full stack&quot; en C# (7 ans quotidien).
+        ///
+        ///Je suis aussi à l&apos;aise en C et C++ (Qt &amp; QML).
+        ///
+        ///Ayant un parcours académique en informatique industrielle, les problèmes d&apos;informatique bas niveau et l&apos;électronique m&apos;intéressent également beaucoup..
         /// </summary>
         public static string ProfileDescription {
             get {
@@ -346,11 +354,9 @@ namespace CV.Properties {
         
         /// <summary>
         ///   Recherche une chaîne localisée semblable à Banc de test réseaux pour le train NAT :
-        /// - Développement d&apos;architecture logicielle complexe
-        /// - Modification code source FPGA en C (processeur NIOS)
-        /// - Simulation en temps réel d&apos;équipements via un PC
-        /// - Test des équipements dans leur environnement nominal
-        /// - Réalisation de séquences (mise en service, arrêt d&apos;urgence...).
+        /// - Simulation d&apos;équipements sur bus MVB (FPGA, NIOS II, C)
+        /// - Simulation en temps réel d&apos;équipements IP via un PC (C#)
+        /// - Scripts de simulation (retranscription d&apos;un fonctionnel câblé électrique).
         /// </summary>
         public static string SNCFJobDescription {
             get {

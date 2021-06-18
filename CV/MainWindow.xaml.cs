@@ -15,6 +15,8 @@
 
         public Uri EmailAddressUri => new Uri(Properties.Resources.MailToEmailAddress);
 
+        public Uri LinkedInUri => new Uri(Properties.Resources.LinkedIn);
+
         void PrintCommandBinding_CanExecute(object sender, System.Windows.Input.CanExecuteRoutedEventArgs e)
         {
             e.CanExecute = true;

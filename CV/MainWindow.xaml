@@ -56,7 +56,7 @@
                                TextAlignment="Center"
                                TextWrapping="Wrap" />
                     <TextBlock Style="{StaticResource CategoryDescriptionText}" Text="{x:Static properties:Resources.Info}" />
-                    <TextBlock Margin="0 10 0 0" Text="{x:Static properties:Resources.ContactHeader}" />
+                    <TextBlock Margin="0 10 0 0" Text="{x:Static properties:Resources.ContactHeader}" Style="{StaticResource CategoryTitle}" />
                     <Separator Margin="0 2 0 6" />
                     <UniformGrid Columns="1"
                                  Grid.IsSharedSizeScope="True"
@@ -99,20 +99,45 @@
                                 </Hyperlink>
                             </TextBlock>
                         </Grid>
+                        <Grid Margin="0 6 0 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" SharedSizeGroup="Icons" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <fa:SvgAwesome Width="16"
+                                           Margin="0 0 12 0"
+                                           VerticalAlignment="Center"
+                                           Foreground="White"
+                                           Icon="Brands_Linkedin" />
+                            <TextBlock Grid.Column="1"
+                                       VerticalAlignment="Center"
+                                       FontSize="12">
+                                <Hyperlink Foreground="White"
+                                           NavigateUri="{Binding LinkedInUri}"
+                                           TextDecorations="None">
+                                    <Run Text="thomas-prioul" />
+                                </Hyperlink>
+                            </TextBlock>
+                        </Grid>
                     </UniformGrid>
                 </StackPanel>
                 <!--<StackPanel x:Name="ContactPanel" Grid.Row="2">
                 </StackPanel>-->
-                <StackPanel x:Name="ProfilePanel" Grid.Row="2">
+                <StackPanel x:Name="ProfilePanel"
+                            Grid.Row="2"
+                            Margin="0 10 0 0">
                     <TextBlock Style="{StaticResource CategoryTitle}" Text="{x:Static properties:Resources.ProfileHeader}" />
                     <Separator Style="{StaticResource CategoryTitleSeparator}" />
                     <ScrollViewer VerticalScrollBarVisibility="Auto">
-                        <TextBlock LineHeight="14"
+                        <TextBlock FontSize="12"
+                                   LineHeight="14"
                                    Style="{StaticResource CategoryDescriptionText}"
                                    Text="{x:Static properties:Resources.ProfileDescription}" />
                     </ScrollViewer>
                 </StackPanel>
-                <StackPanel x:Name="ActivitiesPanel" Grid.Row="4">
+                <StackPanel x:Name="ActivitiesPanel"
+                            Grid.Row="4"
+                            Margin="0 10 0 0">
                     <TextBlock Style="{StaticResource CategoryTitle}" Text="{x:Static properties:Resources.ActivitiesHeader}" />
                     <Separator Style="{StaticResource CategoryTitleSeparator}" />
                     <ScrollViewer VerticalScrollBarVisibility="Auto">
@@ -122,8 +147,7 @@
                             <TextBlock Style="{StaticResource CategorySubHeader}" Text="{x:Static properties:Resources.MusicActivityHeader}" />
                             <TextBlock Style="{StaticResource CategoryDescriptionText}" Text="{x:Static properties:Resources.MusicActivityDescription}" />
                             <TextBlock Style="{StaticResource CategorySubHeader}" Text="Sports" />
-                            <TextBlock Style="{StaticResource CategoryDescriptionText}" Text="Tennis" />
-                            <TextBlock Style="{StaticResource CategoryDescriptionText}" Text="Football" />
+                            <TextBlock Style="{StaticResource CategoryDescriptionText}" Text="Tennis - Football" />
                         </StackPanel>
                     </ScrollViewer>
                 </StackPanel>
@@ -156,14 +180,14 @@
                     <TextBlock x:Name="ABCPortageDates"
                                DockPanel.Dock="Right"
                                Style="{StaticResource CategorySubHeader}"
-                               Text="2017-2020" />
+                               Text="2017-2021" />
                     <StackPanel x:Name="ABCPortageTitle">
                         <TextBlock Style="{StaticResource CategorySubHeader}" Text="{x:Static properties:Resources.ABCPortageJobTitle}" />
                         <TextBlock Margin="0 -4 0 8"
                                    FontSize="12"
                                    LineHeight="Auto"
                                    Style="{StaticResource CategoryDescriptionText}"
-                                   Text="ABC Portage (portage salarial) pour la SNCF" />
+                                   Text="Prestation externe pour la SNCF" />
                     </StackPanel>
                 </DockPanel>
                 <DockPanel x:Name="SNCFExperienceBlock" Margin="0 10 0 0">
@@ -223,7 +247,7 @@
                 <StackPanel x:Name="ComputingSkillsBlock">
                     <TextBlock Style="{StaticResource CategorySubHeader}" Text="{x:Static properties:Resources.IndustrialComputingHeader}" />
                     <ScrollViewer VerticalScrollBarVisibility="Auto">
-                        <TextBlock FontSize="9"
+                        <TextBlock FontSize="10"
                                    LineHeight="Auto"
                                    Style="{StaticResource CategoryDescriptionText}"
                                    Text="{x:Static properties:Resources.ComputingSkillsDescription}" />
