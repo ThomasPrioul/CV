@@ -1,0 +1,6 @@
+My 2018 CV as an executable app (single EXE file - unsigned so windows smartscreen will warn you).
+Made with C#/WPF.
+Uses custom Windows Shell integration, with a print button in the "system bar".
+Somewhat responsive to greater window sizes.
+
+![cv](./cv.png)
