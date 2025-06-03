@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Thomas Prioul - CV</title>
+  <!-- <base href="/" /> -->
+  <link rel="stylesheet" href="assets/normalize.css">
+  <link rel="stylesheet" href="assets/reset.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="assets/profile.png">
+
+  <style>
+    :root {
+      --text-color: light-dark(#4d4f53, #fff);
+      --light-text-color: light-dark(#777, #b0b0b0);
+      --shadow-color: light-dark(#4d4f5330, #ffffff30);
+      --bg-color: light-dark(#fff, #333);
+      font: 12px "Tahoma";
+    }
+
+    html {
+      color-scheme: light dark;
+      background-color: light-dark(white, black);
+    }
+
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      color: var(--text-color);
+      font: 12pt "Tahoma";
+    }
+
+    * {
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    }
+
+    .page-container {
+      width: 210mm;
+      min-height: 297mm;
+      padding: 20mm;
+      margin: 10mm auto;
+      border: 1px var(--light-text-color) solid;
+      border-radius: 5px;
+      box-shadow: 0 0 5px var(--shadow-color);
+      background-color: var(--bg-color);
+    }
+
+    .page-contents {
+      /* padding: 1cm; */
+      /* border: 5px red solid; */
+      height: 257mm;
+      outline: 1cm transparent;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+
+      html,
+      body {
+        width: 210mm;
+        height: 297mm;
+      }
+
+      .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+      }
+    }
+  </style>
+
+  <style>
+    h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    .profile-photo {
+      border-radius: calc(1px * infinity);
+      border: 0.25rem solid var(--shadow-color);
+      aspect-ratio: 1;
+      width: 2cm;
+      margin-inline-end: 1rem;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="page-contents">
+      <section id="profile">
+        <img class="profile-photo" src="assets/profile.png" alt="Photo de profil">
+        <h1 class="name">Thomas PRIOUL</h1>
+        <h2 class="title">Ingénieur d'études - informatique industrielle</h2>
+        <div style="display: inline-flex; gap: 1rem">
+          <div class="age">30 ans</div> -
+          <div class="nationality">Français</div> -
+          <div class="driver-licence">Permis B</div>
+        </div>
+        <div class="about-me">
+          Best dev on earth
+        </div>
+      </section>
+      <section id="experiences">
+        <h1>Expériences professionnelles</h1>
+        <table>
+          <tbody>
+            <tr>
+              <td>2021-2025</td>
+              <td>Ingénieur d'études (MASTERIS)</td>
+            </tr>
+            <tr>
+              <td>2017-2021</td>
+              <td>Ingénieur d'études en prestation (ABC Portage, MODIS)</td>
+            </tr>
+          </thead>
+        </table>
+      </section>
+    </div>
+  </div>
+  <div class="page-container">
+    <div class="page-contents">
+      Page 2/2
+    </div>
+  </div>
+</body>
+<script>
+  function setAge() {
+    const element = document.querySelector('.age');
+    if (!element) return;
+
+    const birthTs = 793987320000;
+    const age = Math.floor((Date.now() - birthTs) / 31557600000);
+    element.innerHTML = `${age} ans`;
+  }
+
+  setAge();
+</script>
+
+</html>
