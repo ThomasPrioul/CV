@@ -17,6 +17,7 @@
       --shadow-color: light-dark(#4d4f5330, #ffffff30);
       --bg-color: light-dark(#fff, #333);
       font: 12px "Tahoma";
+      font-weight: 400;
     }
 
     html {
@@ -43,6 +44,7 @@
       min-height: 297mm;
       padding: 20mm;
       margin: 10mm auto;
+
       border: 1px var(--light-text-color) solid;
       border-radius: 5px;
       box-shadow: 0 0 5px var(--shadow-color);
@@ -69,15 +71,18 @@
         height: 297mm;
       }
 
-      .page {
+      .page-container {
+        page-break-after: always;
+
         margin: 0;
         border: initial;
         border-radius: initial;
         width: initial;
         min-height: initial;
+
         box-shadow: initial;
         background: initial;
-        page-break-after: always;
+
       }
     }
   </style>
@@ -96,13 +101,110 @@
       font-size: 1.1rem;
     }
 
+    .personal-info {
+      display: inline-flex;
+      gap: 1rem;
+      font-size: 80%;
+      opacity: 75%;
+    }
+
+    section#profile {
+      display: flex;
+      gap: 1rem;
+      margin-block-end: 1rem;
+    }
+
+    section:not(#profile) {
+      margin-block-start: 1rem;
+    }
+
+    section details {
+      font-size: 90%;
+      padding-block-end: 0.5rem;
+    }
+
+    section details:not(:first-of-type) {
+      /* margin-block-start: 0.5rem; */
+      border-top: 2px solid #8888;
+    }
+
+    details>summary {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.5rem 0;
+      font-weight: 700;
+    }
+
+    details:hover {
+      background-color: var(--shadow-color);
+    }
+
+    dl {
+      margin-inline-start: 1rem;
+    }
+
+    dt {
+      margin-block-start: 0.5rem;
+    }
+
+    dd {
+      opacity: 0.6;
+      margin-block-end: 1rem;
+    }
+
+    ul {
+      padding-inline-start: 2rem;
+    }
+
+    .dates {
+      margin-inline-start: auto;
+      opacity: 0.7;
+      font-size: 90%;
+    }
+
+    .ext-logos {
+      display: flex;
+      flex-direction: column;
+      margin-inline-start: auto;
+      gap: 0.25rem;
+      font-size: 75%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a.ext-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .ext-logo.github img {
+        filter: invert(1);
+      }
+    }
+
+    a.ext-logo.email {
+      font-size: 90%;
+    }
+
+    a.ext-logo.email .logo {
+      font-size: 10pt;
+      line-height: 1;
+    }
+
     .profile-photo {
       border-radius: calc(1px * infinity);
       border: 0.25rem solid var(--shadow-color);
       aspect-ratio: 1;
       width: 2cm;
-      margin-inline-end: 1rem;
-      float: left;
+      break-after: avoid-column;
+      /* float: left; */
     }
   </style>
 </head>
@@ -110,39 +212,164 @@
 <body>
   <div class="page-container">
     <div class="page-contents">
-      <section id="profile">
+      <section id="profile" style="position: relative;display: fles;">
         <img class="profile-photo" src="assets/profile.png" alt="Photo de profil">
-        <h1 class="name">Thomas PRIOUL</h1>
-        <h2 class="title">Ingénieur d'études - informatique industrielle</h2>
-        <div style="display: inline-flex; gap: 1rem">
-          <div class="age">30 ans</div> -
-          <div class="nationality">Français</div> -
-          <div class="driver-licence">Permis B</div>
+        <div>
+          <h1 class="name">Thomas PRIOUL</h1>
+          <h2 class="title">Ingénieur logiciel / informatique industrielle</h2>
+          <div class="personal-info">
+            <div class="age">30 ans</div> -
+            <div class="nationality">Français</div> -
+            <div class="driver-licence">Permis B</div>
+          </div>
+          <div class="about-me">
+            Développeur front-end web, full-stack C#.
+          </div>
         </div>
-        <div class="about-me">
-          Best dev on earth
+        <div class="ext-logos">
+          <a class="ext-logo" href="https://www.linkedin.com/in/thomas-prioul/"><img height="12"
+              src="assets/linkedin.svg" alt="linkedin">in/thomas-prioul</a>
+          <a class="ext-logo github" href="https://github.com/ThomasPrioul/"><img height="12"
+              src="assets/github-mark.svg" alt="github">ThomasPrioul</a>
+          <a class="ext-logo email" href="mailto:thomas.prioul@outlook.com"><span class="logo">✉</span> thomas.prioul@outlook.com</a>
         </div>
       </section>
       <section id="experiences">
         <h1>Expériences professionnelles</h1>
-        <table>
-          <tbody>
-            <tr>
-              <td>2021-2025</td>
-              <td>Ingénieur d'études (MASTERIS)</td>
-            </tr>
-            <tr>
-              <td>2017-2021</td>
-              <td>Ingénieur d'études en prestation (ABC Portage, MODIS)</td>
-            </tr>
-          </thead>
-        </table>
+        <details open>
+          <summary>
+            <span>Ingénieur développement logiciel</span>
+            <span class="dates">MASTERIS | 2021-2025</span>
+          </summary>
+          <dl>
+            <dt>
+              Logiciel de supervision pour clients externes à la SNCF
+            </dt>
+            <dd>
+              Développement et suivi du projet, hébergé dans le cloud
+              <ul style="display: flex; gap : 3rem">
+                <li>M2M</li>
+                <li>thingsboard, postgres, Angular, no-code</li>
+                <li>terraform, AWS</li>
+                <li>redmine</li>
+              </ul>
+            </dd>
+            <dt>
+              Support logiciel Angular/TypeScript
+            </dt>
+            <dd>
+              <ul>
+                <li>Réalisation de librairies UI (charte graphique, composants)</li>
+                <li>Support pour l'équipe, revues de code, formation des alternants</li>
+                <li>Conception d'architectures pour l'équipe</li>
+              </ul>
+            </dd>
+            <dt>
+              Logiciel 'aide à la décision' pour hotline opérationnelle
+            </dt>
+            <dd>
+              Suite du projet 'valise dépannage'
+              <ul style="columns: 2">
+                <li>Support des nouveaux trains RERNG</li>
+                <li>Travail en atelier pour les JO 2024</li>
+                <li>Version "hyper-responsive", du smartphone à l'écran ultra-wide.</li>
+              </ul>
+            </dd>
+          </dl>
+        </details>
+        <details open>
+          <summary>
+            <span>Ingénieur informatique industrielle</span>
+            <span class="dates">ABC Portage, MODIS | 2017-2021</span>
+          </summary>
+          <dl>
+            <dt>
+              Logiciel 'valise dépannage' pour les trains NAT et Régio2N
+            </dt>
+            <dd>
+              <ul>
+                <li>Détections d'anomalies en temps réel, sur rame ou à distance</li>
+                <li>Affichage graphique avec dessins et couleurs, beaucoup d'UX/UI</li>
+              </ul>
+            </dd>
+            <dt>
+              Banc de test réseaux pour le train Régio2N
+            </dt>
+            <dd>
+              <ul>
+                <li>Basé sur le banc NAT développé lors de l'alternance</li>
+                <li>Simulation de 3x + de réseaux/équipements</li>
+                <li>Logiciel service web multiplateforme (Linux)</li>
+              </ul>
+            </dd>
+            <dt>
+              Simulateur de mission (pour Île-de-France Mobilités)
+            </dt>
+            <dd>
+              <ul>
+                <li>Simule le déplacement du train par émission de messages réseaux</li>
+                <li>Suivi du train sur une carte, ainsi qu'un plan de ligne</li>
+                <li>Validation réelle des bases de données "SIVE", sans mobiliser de train</li>
+              </ul>
+            </dd>
+          </dl>
+        </details>
+        <details open>
+          <summary>
+            <span>Apprenti informatique industrielle</span>
+            <span class="dates">SNCF | 2014-2017</span>
+          </summary>
+          <dl>
+            <dt>
+              Banc de test réseaux pour le train NAT
+            </dt>
+            <dd>
+              <ul>
+                <li>Développement d'architecture logicielle complexe (client/serveur C#)</li>
+                <li>Modification code source FPGA en C (processeur NIOS)</li>
+                <li>Simulation en temps réel d'équipements depuis un PC (soft real-time, C#)</li>
+                <!-- <li>Test des équipements dans leur environnement nominal</li> -->
+                <li>Réalisation de scénarios du train (mise en service, arrêt d'urgence...)</li>
+              </ul>
+            </dd>
+          </dl>
+        </details>
       </section>
-    </div>
-  </div>
-  <div class="page-container">
-    <div class="page-contents">
-      Page 2/2
+      <section id="formation">
+        <h1>Formation</h1>
+        <details open>
+          <summary>
+            <span>Ingénieur informatique industrielle</span>
+            <span class="dates">Polytech Tours | 2014-2017</span>
+          </summary>
+          <dl>
+            <dd>
+
+              <ul style="columns:3">
+                <li>En alternance pendant 3 ans</li>
+                <li>Option véhicules autonomes</li>
+                <li>Major de promo</li>
+              </ul>
+            </dd>
+          </dl>
+        </details>
+        <details open>
+          <summary>
+            <span>DUT GEII (Génie Électrique, Informatique Industrielle)</span>
+            <span class="dates">IUT de Tours | 2012-2014</span>
+          </summary>
+          <dl>
+            <dd>
+              <ul style="columns: 4;">
+                <li>Electrotech</li>
+                <li>Electronique</li>
+                <li>Info indus.</li>
+                <li>Automatisme</li>
+              </ul>
+            </dd>
+          </dl>
+        </details>
+      </section>
     </div>
   </div>
 </body>
@@ -156,7 +383,26 @@
     element.innerHTML = `${age} ans`;
   }
 
+  function watchPrintEvents() {
+    window.matchMedia("print").addEventListener("change", evt => {
+      if (evt.matches) {
+        elms = document.body.querySelectorAll("details:not([open])");
+        for (e of elms) {
+          e.setAttribute("open", "");
+          e.dataset.wasclosed = "";
+        }
+      } else {
+        elms = document.body.querySelectorAll("details[data-wasclosed]");
+        for (e of elms) {
+          e.removeAttribute("open");
+          delete e.dataset.wasclosed;
+        }
+      }
+    })
+  }
+
   setAge();
+  watchPrintEvents();
 </script>
 
 </html>
